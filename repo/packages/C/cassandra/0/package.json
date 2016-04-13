@@ -5,6 +5,7 @@
   "scm": "https://github.com/mesosphere/cassandra-mesos.git",
   "maintainer": "support@mesosphere.io",
   "description": "Apache Cassandra running on Apache Mesos",
+  "selected": true,
   "framework": true,
   "tags": ["data", "database", "nosql"],
   "preInstallNotes":"The Apache Cassandra DCOS Service implementation is alpha and there may be bugs, incomplete features, incorrect documentation or other discrepancies.\nThe default configuration requires 3 nodes each with 0.3 CPU shares, 1184MB of memory and 272MB of disk.",

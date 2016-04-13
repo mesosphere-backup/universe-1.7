@@ -5,6 +5,7 @@
   "scm": "https://github.com/mesosphere/cassandra-mesos.git",
   "maintainer": "support@mesosphere.io",
   "description": "Apache Cassandra running on DCOS",
+  "selected": true,
   "framework": true,
   "tags": ["data", "database", "nosql"],
   "preInstallNotes":"You are about the DCOS Apache Cassandra service. The current Cassandra version is 2.2.5",

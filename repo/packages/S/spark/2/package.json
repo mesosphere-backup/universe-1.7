@@ -19,6 +19,7 @@
         "batch",
         "analytics"
     ],
+    "selected": true,
     "framework": true,
     "version": "1.6.1-1"
 }
