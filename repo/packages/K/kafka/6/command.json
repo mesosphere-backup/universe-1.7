@@ -1,5 +1,5 @@
 {
   "pip": [
-    "https://s3-us-west-2.amazonaws.com/kafka-dev-bucket/mohit/dcos-kafka-0.2.5.zip"
+    "https://s3-us-west-2.amazonaws.com/kafka-dev-bucket/mohit/dcos-kafka-0.2.5.tar.gz"
   ]
 }
