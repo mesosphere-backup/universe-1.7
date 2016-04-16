@@ -13,7 +13,7 @@
                 "cpus": {
                     "default": 1,
                     "description": "CPU shares",
-                    "minimum": 0.0,
+                    "minimum": 0.5,
                     "type": "number"
                 },
                 "mem": {
