@@ -24,25 +24,25 @@
 					"id": "http://cassandra/docs/mesosphere.com/service/cpus",
 					"type": "number",
 					"description": "The cpu shares used by the Cassandra service scheduler.",
-					"default": "0.5"
+					"default": 0.5
 				},
 				"mem": {
 					"id": "http://cassandra/docs/mesosphere.com/service/mem",
 					"type": "integer",
 					"description": "The memory used by the Cassandra service scheduler in Mb.",
-					"default": "2048"
+					"default": 2048
 				},
 				"heap": {
 					"id": "http://cassandra/docs/mesosphere.com/service/heap",
 					"type": "integer",
 					"description": "The JVM heap used by the Cassandra service scheduler in Mb.",
-					"default": "1024"
+					"default": 1024
 				},
 				"api_port" : {
 					"id": "http://cassandra/docs/mesosphere.com/service/api_port",
 					"type": "integer",
 					"description": "The port that the Cassandra service API will accept on.",
-					"default": "9000"
+					"default": 9000
 				},
 				"placement_strategy": {
 					"id": "http://cassandra/docs/mesosphere.com/service/placement_strategy",
@@ -460,31 +460,31 @@
 					"id": "http://cassandra/docs/mesosphere.com/executor/cpus",
 					"type": "number",
 					"description": "The cpu shares used by the Cassandra service executor.",
-					"default": "0.5"
+					"default": 0.5
 				},
 				"mem": {
 					"id": "http://cassandra/docs/mesosphere.com/executor/mem",
 					"type": "integer",
 					"description": "The memory used by the Cassandra service executor in Mb.",
-					"default": "1024"
+					"default": 1024
 				},
 				"heap": {
 					"id": "http://cassandra/docs/mesosphere.com/executor/heap",
 					"type": "integer",
 					"description": "The JVM heap used by the Cassandra service executor in Mb.",
-					"default": "768"
+					"default": 768
 				},
 				"disk": {
 					"id": "http://cassandra/docs/mesosphere.com/executor/heap",
 					"type": "integer",
 					"description": "The amount of disk used by the Cassandra service executor in Mb.",
-					"default": "1024"
+					"default": 1024
 				},
 				"api_port" : {
 					"id": "http://cassandra/docs/mesosphere.com/executor/api_port",
 					"type": "integer",
 					"description": "The port that the Cassandra executor API will accept on.",
-					"default": "9001"
+					"default": 9001
 				}
 			},
 			"additionalProperties": false,
@@ -505,13 +505,13 @@
 					"id": "http://cassandra/docs/mesosphere.com/task/cpus",
 					"type": "number",
 					"description": "The cpu shares used by the Cassandra service cluster tasks.",
-					"default": "0.5"
+					"default": 0.5
 				},
 				"mem": {
 					"id": "http://cassandra/docs/mesosphere.com/executor/mem",
 					"type": "integer",
 					"description": "The memory used by the Cassandra cluster tasks in Mb.",
-					"default": "256"
+					"default": 256
 				}
 			},
 			"additionalProperties": false,
