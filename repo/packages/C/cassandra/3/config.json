@@ -123,12 +123,6 @@
 					]
 
 				},
-				"volume_size": {
-					"id": "http://cassandra/docs/mesosphere.com/node/volume_size",
-					"type": "integer",
-					"description": "The size of the persistent volume, in MB, allocated to the Cassandra process.",
-					"default": 9216
-				},
 				"seeds": {
 					"id": "http://cassandra/docs/mesosphere.com/node/seeds",
 					"type": "integer",
@@ -142,7 +136,6 @@
 				"mem",
 				"disk",
 				"heap",
-				"volume_size",
 				"count",
 				"seeds"
 			]
