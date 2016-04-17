@@ -22,7 +22,7 @@
 				},
 				"cpus": {
 					"id": "http://cassandra/docs/mesosphere.com/service/cpus",
-					"type": "integer",
+					"type": "number",
 					"description": "The cpu shares used by the Cassandra service scheduler.",
 					"default": "0.5"
 				},
