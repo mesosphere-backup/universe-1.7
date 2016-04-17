@@ -458,7 +458,7 @@
 			"properties": {
 				"cpus": {
 					"id": "http://cassandra/docs/mesosphere.com/executor/cpus",
-					"type": "integer",
+					"type": "number",
 					"description": "The cpu shares used by the Cassandra service executor.",
 					"default": "0.5"
 				},
@@ -503,7 +503,7 @@
 			"properties": {
 				"cpus": {
 					"id": "http://cassandra/docs/mesosphere.com/task/cpus",
-					"type": "integer",
+					"type": "number",
 					"description": "The cpu shares used by the Cassandra service cluster tasks.",
 					"default": "0.5"
 				},
