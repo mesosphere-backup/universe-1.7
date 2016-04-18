@@ -6,7 +6,7 @@
 		"service": {
 			"id": "http://cassandra/docs/mesosphere.com/service",
 			"type": "object",
-			"description": "The Cassandra service configuration object.",
+			"description": "DC/OS service configuration properties",
 			"properties": {
 				"name": {
 					"id": "http://cassandra/docs/mesosphere.com/service/name",
@@ -49,12 +49,6 @@
 					"type": "string",
 					"description": "The placement strategy for Cassandra nodes. This should always be NODE.",
 					"default": "NODE"
-				},
-				"plan_strategy": {
-					"id": "http://cassandra/docs/mesosphere.com/service/plan_strategy",
-					"description": "Broker placement strategy. See documentation. [INSTALL, STAGE]",
-					"type": "string",
-					"default": "INSTALL"
 				}
 			},
 			"additionalProperties": false,
@@ -65,14 +59,13 @@
 				"mem",
 				"heap",
 				"api_port",
-				"plan_strategy",
 				"placement_strategy"
 			]
 		},
 		"nodes": {
 			"id": "http://cassandra/docs/mesosphere.com/node",
 			"type": "object",
-			"description": "Configuration object for Cassandra nodes",
+			"description": "Cassandra node configuration properties",
 			"properties": {
 				"count": {
 					"id": "http://cassandra/docs/mesosphere.com/node/count",
@@ -142,6 +135,7 @@
 		},
 		"cassandra": {
 			"id": "http://cassandra/docs/mesosphere.com/cassandra",
+			"description": "Cassandra service configuration properties",
 			"type": "object",
 			"properties": {
 				"jmx_port": {
