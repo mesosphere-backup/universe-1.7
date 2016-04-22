@@ -58,9 +58,7 @@
 ,"CASSANDRA_CPUS":"{{nodes.cpus}}"
 ,"CASSANDRA_MEMORY_MB":"{{nodes.mem}}"
 ,"CASSANDRA_DISK_MB":"{{nodes.disk}}"
-{{#nodes.mount_disk}}
-,"CASSANDRA_DISK_TYPE":"MOUNT"
-{{/nodes.mount_disk}}
+,"CASSANDRA_DISK_TYPE":"{{nodes.disk_type}}"
 ,"CASSANDRA_HEAP_SIZE_MB":"{{nodes.heap.size}}"
 ,"CASSANDRA_HEAP_NEW_MB":"{{nodes.heap.new}}"
 ,"CASSANDRA_JMX_PORT":"{{cassandra.jmx_port}}"

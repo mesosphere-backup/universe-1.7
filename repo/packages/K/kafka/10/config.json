@@ -45,10 +45,10 @@
             "type":"integer",
             "default":5000
           },
-          "mount_disk": {
-            "type": "boolean",
-            "description": "Only use a dedicated mounted volume for storing Broker data.",
-            "default": false
+          "disk_type": {
+            "type": "string",
+            "description": "Disk type to be used for storing broker data. See documentation. [ROOT, MOUNT]",
+            "default": "ROOT"
           },
           "count":{
             "description":"Number of brokers to run",
