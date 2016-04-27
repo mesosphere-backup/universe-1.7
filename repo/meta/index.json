@@ -1,7 +1,7 @@
 {
   "packages":[
     {
-      "currentVersion":"1.0.1-2.2.5",
+      "currentVersion":"1.0.2-2.2.5",
       "description":"Apache Cassandra running on DC/OS",
       "framework":true,
       "name":"cassandra",
@@ -13,7 +13,7 @@
       ],
       "versions":{
         "0.2.0-1":"1",
-        "1.0.1-2.2.5":"3",
+        "1.0.2-2.2.5":"3",
         "2.2.5-0.2.0":"2"
       }
     },
@@ -34,7 +34,7 @@
       }
     },
     {
-      "currentVersion":"1.0.1-0.9.0.1",
+      "currentVersion":"1.0.5-0.9.0.1",
       "description":"Apache Kafka running on DC/OS",
       "framework":true,
       "name":"kafka",
@@ -52,7 +52,11 @@
         "0.9.2.0":"0",
         "0.9.4.0":"1",
         "1.0.0-0.9.0.1":"6",
-        "1.0.1-0.9.0.1":"7"
+        "1.0.1-0.9.0.1":"7",
+        "1.0.2-0.9.0.1":"8",
+        "1.0.3-0.9.0.1":"9",
+        "1.0.4-0.9.0.1":"10",
+        "1.0.5-0.9.0.1":"11"
       }
     },
     {
