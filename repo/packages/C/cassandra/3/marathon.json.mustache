@@ -134,7 +134,12 @@
 ,"CLUSTER_TASK_CPUS":"{{task.cpus}}"
 ,"CLUSTER_TASK_MEMORY_MB":"{{task.mem}}"
 ,"NODES":"{{nodes.count}}"
-,"EXTERNAL_DCS":"{{service.external_dcs}}"
+{{#service.external_data_centers}}
+,"EXTERNAL_DCS":"{{service.external_data_centers}}"
+{{/service.external_data_centers}}
+{{#service.data_center_url}}
+,"DC_URL":"{{service.data_center_url}}"
+{{/service.data_center_url}}
 ,"SEED_NODES":"{{nodes.seeds}}"
 ,"PLACEMENT_STRATEGY":"{{service.placement_strategy}}"
 ,"PHASE_STRATEGY":"org.apache.mesos.scheduler.plan.DefaultInstallStrategy"

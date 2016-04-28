@@ -56,11 +56,15 @@
 					"description": "The name of the Cassandra data center.",
 					"default": "dc1"
 				},
-				"external_dcs" : {
-				    "id": "http://cassandra/docs/mesosphere.com/service/external_dcs",
+				"external_data_centers" : {
+				    "id": "http://cassandra/docs/mesosphere.com/service/external_data_centers",
 					"type": "string",
-					"description": "A comma separated list of the URLs of external datacenters for the Cassandra cluster. ",
-					"default": ""
+					"description": "A comma separated list of the URLs of external data centers for the Cassandra cluster. "
+				},
+				"data_center_url" : {
+				    "id": "http://cassandra/docs/mesosphere.com/service/data_center_url",
+					"type": "string",
+					"description": "The URL that the service will advertise to other clusters in different data centers. This should be set to the same value as the value included in the external_data_centers list of the service(s) deployed in remote datacenters. "
 				},
 				"placement_strategy": {
 					"id": "http://cassandra/docs/mesosphere.com/service/placement_strategy",
