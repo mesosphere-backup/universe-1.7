@@ -44,6 +44,18 @@
 					"description": "The port that the Cassandra service API will accept on.",
 					"default": 9000
 				},
+				"cluster" : {
+				    "id": "http://cassandra/docs/mesosphere.com/service/cluster",
+					"type": "string",
+					"description": "The name of the Cassandra cluster.",
+					"default": "dcos_cassandra"
+				},
+				"external_dcs" : {
+				    "id": "http://cassandra/docs/mesosphere.com/service/external_dcs",
+					"type": "string",
+					"description": "A comma separated list of the URLs of external datacenters for the Cassandra cluster. ",
+					"default": ""
+				},
 				"placement_strategy": {
 					"id": "http://cassandra/docs/mesosphere.com/service/placement_strategy",
 					"type": "string",
