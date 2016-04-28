@@ -50,6 +50,12 @@
 					"description": "The name of the Cassandra cluster.",
 					"default": "dcos_cassandra"
 				},
+				"data_center" : {
+				    "id": "http://cassandra/docs/mesosphere.com/service/data_center",
+					"type": "string",
+					"description": "The name of the Cassandra data center.",
+					"default": "dc1"
+				},
 				"external_dcs" : {
 				    "id": "http://cassandra/docs/mesosphere.com/service/external_dcs",
 					"type": "string",
@@ -65,6 +71,8 @@
 			},
 			"additionalProperties": false,
 			"required": [
+			    "cluster",
+			    "data_center",
 				"name",
 				"user",
 				"cpus",
