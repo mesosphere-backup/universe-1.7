@@ -91,6 +91,12 @@
 					"description": "The amount of disk, in MB, allocated to the Cassandra process.",
 					"default": 10240
 				},
+				"disk_type": {
+					"id": "http://cassandra/docs/mesosphere.com/node/diskType",
+					"type": "string",
+					"description": "Disk type to be used for storing Cassandra data. See documentation. [ROOT, MOUNT]",
+					"default": "ROOT"
+				},
 				"heap": {
 					"id": "http://cassandra/docs/mesosphere.com/node/heap",
 					"type": "object",
