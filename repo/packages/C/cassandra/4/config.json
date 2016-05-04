@@ -252,6 +252,12 @@
 					"description": "How frequently index summaries should be re-sampled in minutes. This is done periodically to redistribute memory from the fixed-size pool to SSTables proportional their recent read rates.",
 					"default": 60
 				},
+				"ssl_storage_port": {
+					"id": "http://cassandra/docs/mesosphere.com/cassandra/storagePort",
+					"type": "integer",
+					"description": "The port for inter-node communication.",
+					"default": 10050
+				},
 				"storage_port": {
 					"id": "http://cassandra/docs/mesosphere.com/cassandra/storagePort",
 					"type": "integer",
