@@ -45,6 +45,11 @@
             "type":"integer",
             "default":5000
           },
+          "disk_type": {
+            "type": "string",
+            "description": "Disk type to be used for storing broker data. See documentation. [ROOT, MOUNT]",
+            "default": "ROOT"
+          },
           "count":{
             "description":"Number of brokers to run",
             "type":"number",
@@ -174,7 +179,7 @@
             "title":"min.insync.replicas",
             "description":"define the minimum number of replicas in ISR needed to satisfy a produce request with required.acks=-1 (or all)",
             "type":"integer",
-            "default":1000012
+            "default":1
           },
           "num_io_threads":{
             "title":"num.io.thread",
