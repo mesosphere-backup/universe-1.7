@@ -67,7 +67,7 @@
       "description":"Spark is a fast and general cluster computing system for Big Data.  Documentation: https://docs.mesosphere.com/usage/managing-services/spark/",
       "framework":false,
       "name":"spark",
-      "selected":false,
+      "selected":true,
       "tags":[
         "bigdata",
         "mapreduce",
