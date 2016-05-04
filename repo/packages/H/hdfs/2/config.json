@@ -5,7 +5,7 @@
       "type":"object",
       "properties":{
         "name":{
-          "description":"The name of the service in DCOS.",
+          "description":"The name of the service in DC/OS.",
           "type":"string",
           "default":"hdfs",
           "title":"name"
@@ -110,12 +110,12 @@
       "properties":{
         "cpus":{
           "default":1,
-          "description":"CPUs",
+          "description":"CPU shares to allocate to each data node instance.",
           "minimum":0.5,
           "type":"number"
         },
         "mem":{
-          "description":"Memory in MB",
+          "description":"The amount of heap memory for the data node in MB.",
           "type":"integer",
           "default":1024
         },
@@ -125,7 +125,7 @@
         },
         "count":{
           "default":2,
-          "description":"Number of data nodes",
+          "description":"The number of data nodes.",
           "minimum":2,
           "type":"integer"
         }
@@ -141,7 +141,7 @@
       "type":"object",
       "properties":{
         "framework-name":{
-          "description":"The name of the service in DCOS.",
+          "description":"The name of the service in DC/OS.",
           "type":"string",
           "default":"hdfs",
           "title":"name"
