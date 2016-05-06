@@ -85,6 +85,12 @@
 					"description": "The amount of memory, in MB, allocated to the Cassandra process.",
 					"default": 4096
 				},
+				"page_cache": {
+					"id": "http://cassandra/docs/mesosphere.com/node/pageCache",
+					"type": "integer",
+					"description": "The amount of memory, in MB, for page cache",
+					"default": 256
+				},
 				"disk": {
 					"id": "http://cassandra/docs/mesosphere.com/node/disk",
 					"type": "integer",
