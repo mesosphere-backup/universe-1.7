@@ -138,7 +138,7 @@
 			"additionalProperties": false,
 			"required": [
 				"cpus",
-				"mem",
+				"jvm_mem",
 				"disk",
 				"heap",
 				"count",
