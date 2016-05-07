@@ -63,7 +63,7 @@
         },
         "required":[
           "cpus",
-          "mem",
+          "jvm_mem",
           "disk",
           "count"
         ]
