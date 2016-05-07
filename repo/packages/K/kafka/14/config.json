@@ -35,15 +35,15 @@
             "type":"number",
             "default":1.0
           },
-          "mem":{
-            "description":"Broker mem requirements",
+          "jvm_mem":{
+            "description":"Broker JVM mem requirements",
             "type":"integer",
             "default":2048
           },
-          "page_cache": {
-  					"description":"The amount of memory, in MB, for page cache",
+          "total_mem": {
+  					"description":"The total amount of memory allocated to the container, in MB. This is inclusive of jvm_mem, and other allocated memory is reserved for OS page cache.",
             "type":"integer",
-  					"default":256
+  					"default":2304
   				},
           "disk":{
             "description":"Broker disk requirements (only respected with persistent volumes)",
