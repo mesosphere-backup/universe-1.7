@@ -1,7 +1,7 @@
 {
   "packages":[
     {
-      "currentVersion":"1.0.4-2.2.5",
+      "currentVersion":"1.0.5-2.2.5",
       "description":"Apache Cassandra running on DC/OS",
       "framework":true,
       "name":"cassandra",
@@ -15,6 +15,7 @@
         "0.2.0-1":"1",
         "1.0.2-2.2.5":"3",
         "1.0.4-2.2.5":"4",
+        "1.0.5-2.2.5":"5",
         "2.2.5-0.2.0":"2"
       }
     },
@@ -63,9 +64,9 @@
       }
     },
     {
-      "currentVersion":"1.6.1-6",
+      "currentVersion":"1.0.0-1.6.1-2",
       "description":"Spark is a fast and general cluster computing system for Big Data.  Documentation: https://docs.mesosphere.com/usage/managing-services/spark/",
-      "framework":true,
+      "framework":false,
       "name":"spark",
       "selected":true,
       "tags":[
@@ -75,6 +76,7 @@
         "analytics"
       ],
       "versions":{
+        "1.0.0-1.6.1-2":"8",
         "1.5.0-multi-roles-v2":"0",
         "1.6.1":"1",
         "1.6.1-1":"2",
