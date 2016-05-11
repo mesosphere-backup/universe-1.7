@@ -44,6 +44,22 @@
 					"description": "The port that the Cassandra service API will accept on.",
 					"default": 9000
 				},
+				"data_center" : {
+					"id": "http://cassandra/docs/mesosphere.com/service/data_center",
+					"type": "string",
+					"description": "The name of the Cassandra data center.",
+					"default": "dc1"
+				},
+				"peer_data_center_urls" : {
+					"id": "http://cassandra/docs/mesosphere.com/service/external_data_centers",
+					"type": "string",
+					"description": "A comma separated list of the URLs of external data centers for the Cassandra cluster. "
+				},
+				"advertise_data_center_url" : {
+					"id": "http://cassandra/docs/mesosphere.com/service/data_center_url",
+					"type": "string",
+					"description": "The URL that the service will advertise to other clusters in different data centers. This should be set to the same value as the value included in the external_data_centers list of the service(s) deployed in remote datacenters. "
+				},
 				"placement_strategy": {
 					"id": "http://cassandra/docs/mesosphere.com/service/placement_strategy",
 					"type": "string",
