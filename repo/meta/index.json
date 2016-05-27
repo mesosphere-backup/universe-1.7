@@ -20,6 +20,21 @@
       }
     },
     {
+      "currentVersion":"2.0.1-mesos",
+      "description":"Confluent Platform running on DCOS",
+      "framework":true,
+      "name":"confluent",
+      "selected":true,
+      "tags":[
+        "message",
+        "broker",
+        "pubsub"
+      ],
+      "versions":{
+        "2.0.1-mesos":"0"
+      }
+    },
+    {
       "currentVersion":"2.5.2-0.1.9",
       "description":"Hadoop Distributed File System (HDFS), Highly Available",
       "framework":true,
