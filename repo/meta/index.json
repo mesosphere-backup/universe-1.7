@@ -20,11 +20,11 @@
       }
     },
     {
-      "currentVersion":"2.5.2-0.1.9",
+      "currentVersion":"2.6.0-0.2.0",
       "description":"Hadoop Distributed File System (HDFS), Highly Available",
       "framework":true,
       "name":"hdfs",
-      "selected":false,
+      "selected":true,
       "tags":[
         "filesystem",
         "hadoop",
@@ -32,7 +32,8 @@
       ],
       "versions":{
         "0.1.7":"0",
-        "2.5.2-0.1.9":"3"
+        "2.5.2-0.1.9":"3",
+        "2.6.0-0.2.0":"4"
       }
     },
     {

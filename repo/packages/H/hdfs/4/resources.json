@@ -1,0 +1,14 @@
+{
+  "images": {
+    "icon-small": "https://downloads.mesosphere.com/hdfs/assets/icon-service-hdfs-small.png",
+    "icon-medium": "https://downloads.mesosphere.com/hdfs/assets/icon-service-hdfs-medium.png",
+    "icon-large": "https://downloads.mesosphere.com/hdfs/assets/icon-service-hdfs-large.png"
+  },
+  "assets": {
+    "uris": {
+      "scheduler-zip": "https://s3-us-west-2.amazonaws.com/hdfs-dev/scheduler.zip",
+      "executor-zip": "https://s3-us-west-2.amazonaws.com/hdfs-dev/executor.zip",
+      "jre-tar-gz": "https://s3-us-west-2.amazonaws.com/hdfs-dev/server-jre-8u74-linux-x64.tar.gz",
+      "hadoop-tar-gz" : "https://s3-us-west-2.amazonaws.com/hdfs-dev/hapdoop-2.6.0-chd5.7.1.tar.gz"
+    }
+  }
