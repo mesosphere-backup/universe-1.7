@@ -24,7 +24,7 @@
       "description":"Hadoop Distributed File System (HDFS), Highly Available",
       "framework":true,
       "name":"hdfs",
-      "selected":true,
+      "selected":false,
       "tags":[
         "filesystem",
         "hadoop",
