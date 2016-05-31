@@ -9,7 +9,7 @@
       "scheduler-zip": "https://s3-us-west-2.amazonaws.com/hdfs-dev/scheduler.zip",
       "executor-zip": "https://s3-us-west-2.amazonaws.com/hdfs-dev/executor.zip",
       "jre-tar-gz": "https://s3-us-west-2.amazonaws.com/hdfs-dev/server-jre-8u74-linux-x64.tar.gz",
-      "hadoop-tar-gz": "https://s3-us-west-2.amazonaws.com/hdfs-dev/hadoop-2.6.0-chd5.7.0.tar.gz"
+      "hadoop-tar-gz": "https://s3-us-west-2.amazonaws.com/hdfs-dev/hadoop-2.6.0-cdh5.7.0.tar.gz"
     }
   }
 }
