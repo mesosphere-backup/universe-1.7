@@ -286,19 +286,19 @@
 					"type": "integer",
 					"id": "http://hdfs/dcos/mesosphere.com/hdfs/data_node_rpc_port",
 					"description": "The RPC port used by Data Nodes.",
-					"default": 9003
+					"default": 9005
 				},
 				"data_node_http_port": {
 					"type": "integer",
 					"id": "http://hdfs/dcos/mesosphere.com/hdfs/data_node_http_port",
 					"description": "The HTTP port used by Data Nodes.",
-					"default": 9004
+					"default": 9006
 				},
 				"data_node_ipc_port": {
 					"type": "integer",
 					"id": "http://hdfs/dcos/mesosphere.com/hdfs/data_node_ipc_port",
 					"description": "The IPS port used by Data Nodes.",
-					"default": 9005
+					"default": 9007
 				},
 				"permissions_enabled": {
 					"type": "boolean",
@@ -316,7 +316,7 @@
 					"type": "boolean",
 					"id": "http://hdfs/dcos/mesosphere.com/hdfs/compress_image",
 					"description": "If true, the File System image will be compressed.",
-					"default": true
+					"default": false
 				},
 				"image_compression_codec": {
 					"type": "string",
