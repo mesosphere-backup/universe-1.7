@@ -29,7 +29,23 @@
         "HISTORY_CLEANER_INTERVAL": "{{history-server.cleaner-interval}}",
         "HISTORY_CLEANER_MAXAGE": "{{history-server.cleaner-maxage}}",
         "HISTORY_KRB_PRINCIPAL": "{{history-server.kerberos.principal}}",
-        "HISTORY_KRB_KEYTAB": "{{history-server.kerberos.keytab}}"
+        "HISTORY_KRB_KEYTAB": "{{history-server.kerberos.keytab}}",
+{{#security.mesos.authentication.enabled}}
+        "DCOS_SERVICE_ACCOUNT_CREDENTIAL": "file:///run/dcos/etc/mesos/agent_service_account.json",
+        "MESOS_MODULES": "file:///opt/mesosphere/etc/mesos-scheduler-modules/dcos_authenticatee_module.json",
+        "MESOS_AUTHENTICATEE": "com_mesosphere_dcos_ClassicRPCAuthenticatee",
+        "MESOS_CREDENTIAL": "{{security.mesos.authentication.credentials}}",
+{{/security.mesos.authentication.enabled}}
+{{#security.mesos.ssl.cert_file}}
+        "SSL_CERT_FILE": "{{security.mesos.ssl.cert_file}}",
+{{/security.mesos.ssl.cert_file}}
+{{#security.mesos.ssl.key_file}}
+        "SSL_KEY_FILE": "{{security.mesos.ssl.key_file}}",
+{{/security.mesos.ssl.key_file}}
+{{#security.mesos.ssl.CA_dir}}
+        "SSL_CA_DIR": "{{security.mesos.ssl.CA_dir}}",
+{{/security.mesos.ssl.CA_dir}}
+        "SSL_ENABLED": "{{security.mesos.ssl.enabled}}"
     },
     "ports": [
         0,
@@ -42,14 +58,28 @@
         "docker": {
             "image": "{{resource.assets.container.docker.spark_docker}}",
             "network": "HOST",
-            "forcePullImage": true,
-            "volumes": [{{#service.volumes}} {
-              "containerPath": "{{containerPath}}",
-              "hostPath": "{{hostPath}}",
-              "mode": "{{mode}}"
+            "forcePullImage": true
+        },
+        "volumes": [
+            {
+                "hostPath": "/run/dcos/pki/",
+                "containerPath": "/run/dcos/pki/",
+                "mode": "RO"
             }
-            {{/service.volumes}}]
-        }
+{{#security.mesos.authentication.enabled}}
+            ,
+            {
+                "hostPath": "/opt/mesosphere/",
+                "containerPath": "/opt/mesosphere/",
+                "mode": "RO"
+            },
+            {
+                "hostPath": "/run/dcos/etc/agent/",
+                "containerPath": "/run/dcos/etc/agent/",
+                "mode": "RO"
+            }
+{{/security.mesos.authentication.enabled}}
+        ]
     },
     "healthChecks": [
         {
